@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>experience i am — clay and kelsy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=1" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.185.1/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="stage" class="stage">
+    <!-- three.js atmosphere: paper grain + drifting pollen (procedural, zero assets) -->
+    <canvas id="gl" aria-hidden="true"></canvas>
+
+    <!-- hidden song titles, revealed only inside the spotlight -->
+    <div id="eggLayer" class="egg-layer" aria-hidden="true">
+      <span class="egg" style="left:14%; top:22%;">insecure</span>
+      <span class="egg" style="left:82%; top:26%;">you hurt me</span>
+      <span class="egg" style="left:12%; top:74%;">i miss you</span>
+      <span class="egg" style="left:85%; top:70%;">memories of me</span>
+      <span class="egg" style="left:50%; top:90%;">i am</span>
+    </div>
+
+    <!-- the words (crisp DOM, paints instantly) -->
+    <div class="mark">
+      <div class="mark__eyebrow">clay and kelsy</div>
+      <h2 class="mark__title">i am</h2>
+      <a class="mark__btn" href="https://clayandkelsy.com/i-am/" target="_top" rel="noopener">[ experience i am ]</a>
+    </div>
+
+    <!-- inversion spotlight (same language as the videos) -->
+    <div id="disc" class="disc" aria-hidden="true"></div>
+  </div>
+
+  <script type="module" src="app.js?v=1"></script>
+</body>
+</html>
