@@ -56,14 +56,14 @@ html, body {
   color: #111;
 }
 
+/* the album's exact "I am" logotype (transparent PNG, white artwork) —
+   recolored to ink so it reads on the white banner */
 .mark__title {
-  font-family: "Playfair Display", Georgia, serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: clamp(64px, 13vw, 168px);
-  line-height: .95;
-  color: #111;
+  display: block;
+  width: clamp(200px, 40vw, 360px);
+  height: auto;
   margin: 1.2rem 0 2.1rem;
+  filter: brightness(0);
 }
 
 .mark__btn {
