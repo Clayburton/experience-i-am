@@ -56,14 +56,13 @@ html, body {
   color: #111;
 }
 
-/* the album's exact "I am" logotype (transparent PNG, white artwork) —
-   recolored to ink so it reads on the white banner */
+/* the album's exact "I am" logotype, vectorized (SVG) — razor-sharp at any
+   size, already inked to match the banner */
 .mark__title {
   display: block;
-  width: clamp(200px, 40vw, 360px);
+  width: clamp(210px, 42vw, 400px);
   height: auto;
   margin: 1.2rem 0 2.1rem;
-  filter: brightness(0);
 }
 
 .mark__btn {
